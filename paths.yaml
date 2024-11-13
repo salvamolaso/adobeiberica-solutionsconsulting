@@ -1,4 +1,4 @@
 mappings:
- - /content/xsc-xwalk-site/:/
- - /content/xsc-xwalk-site/metadata.json:/metadata.json
- - /content/xsc-xwalk-site/redirects.json:/redirects.json
+ - /content/adobeiberica-solutionsconsulting/:/
+ - /content/adobeiberica-solutionsconsulting/metadata.json:/metadata.json
+ - /content/adobeiberica-solutionsconsulting/redirects.json:/redirects.json

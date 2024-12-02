@@ -300,7 +300,10 @@ function loadDelayed() {
 
 async function loadPage() {
   console.log('loading page');
-  document.body.style.visibility = 'hidden';
+  //Salva: Allowing AEM editing
+  if (document.location.host.startsWith("author-")) {
+    document.body.style.visibility = 'hidden';
+  }
   await window.hlx.plugins.load('eager');
   await loadEager(document);
   await window.hlx.plugins.load('lazy');

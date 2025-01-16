@@ -62,7 +62,7 @@ export default async function decorate(block) {
     const topBar = document.createElement('div');
     topBar.classList.add('header-topbar');
     block.prepend(topBar);
-    topBar.innerHTML = '<button onclick="doLogout()" style="display: none;" id="signOutButton">Sign Out</button><button id="signInButton">Sign In</button><div class="header-markets"><span class="icon icon-flag-us"></span>EN-US<span class="header-chevron-down"></span></div>';
+    topBar.innerHTML = '<button onclick="doLogout(event)" style="display: none;" id="signOutButton">Sign Out</button><button id="signInButton">Sign In</button><div class="header-markets"><span class="icon icon-flag-us"></span>EN-US<span class="header-chevron-down"></span></div>';
     nav.prepend(hamburger);
     const signInModal = document.createElement('div');
     signInModal.classList.add('modal');

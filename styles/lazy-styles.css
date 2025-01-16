@@ -43,7 +43,8 @@ Modal Content
 .sign-in-input {
     /* min-width: 150px; */
     display: inline-block;
-    width: 110px;
+    width: 150px;
+    color: black;
 }
 
 .close:hover,

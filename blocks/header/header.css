@@ -302,7 +302,7 @@ header .header-topbar {
   background-color: black;
   color: var(--text-color-light);
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   font-size: var(--body-font-size-xs);
   text-transform: uppercase;
   padding: 0 16px;
@@ -311,6 +311,10 @@ header .header-topbar {
   z-index: 2;
   right: 0;
   left: 0;
+}
+
+header #signInButton {
+  padding: 0px 20px;
 }
 
 header .header-topbar .icon {

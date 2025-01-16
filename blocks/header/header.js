@@ -69,37 +69,8 @@ export default async function decorate(block) {
     signInModal.setAttribute('id', 'signInModal');
     signInModal.innerHTML = '<div class="modal-content"><span class="close">&times;</span><p>SometextintheModal..</p></div>';
     //nav.prepend(signInModal);
-    addSignInModalLogic();
     nav.setAttribute('aria-expanded', 'false');
     decorateIcons(block);
     block.append(nav);
   }
 }
-
-function addSignInModalLogic() {
-  // Get the modal
-  var signInModal = document.getElementById("signInModal");
-  // Get the button that opens the modal
-  var signInButton = document.getElementById("signInButton");
-  // Get the <span> element that closes the modal
-  var signInCloseSpan = document.getElementsByClassName("close")[0];
-  
-  // When the user clicks the button, open the modal 
-  signInButton.onclick = function() {
-    signInModal.style.display = "block";
-  }
-  
-  // When the user clicks on <span> (x), close the modal
-  signInCloseSpan.onclick = function() {
-    signInModal.style.display = "none";
-  }
-  
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == signInModal) {
-      signInModal.style.display = "none";
-    }
-  }
-}
-  
-

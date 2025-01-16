@@ -67,7 +67,7 @@ export default async function decorate(block) {
     const signInModal = document.createElement('div');
     signInModal.classList.add('modal');
     signInModal.setAttribute('id', 'signInModal');
-    signInModal.innerHTML = '<div class="modal-content"><span class="close">&times;</span><form onsubmit="doLogin()"><div class="container"><label class="sign-in-input" for="email">Email</label><input type="text" placeholder="Enter email" name="email" id="userEmail" required><br/><label class="sign-in-input" for="psw">Password</label><input type="password" placeholder="Enter Password" name="psw" required><br/><button type="submit">Login</button></div></form></div>';
+    signInModal.innerHTML = '<div class="modal-content"><span class="close">&times;</span><form onsubmit="return doLogin()"><div class="container"><label class="sign-in-input" for="email">Email</label><input type="text" placeholder="Enter email" name="email" id="userEmail" required><br/><label class="sign-in-input" for="psw">Password</label><input type="password" placeholder="Enter Password" name="psw" required><br/><button type="submit">Login</button></div></form></div>';
     nav.prepend(signInModal);
     nav.setAttribute('aria-expanded', 'false');
     decorateIcons(block);

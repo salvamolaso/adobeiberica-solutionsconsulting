@@ -49,14 +49,11 @@ function addSignInModalLogic() {
 
 addSignInModalLogic();
 
-// Storing login
-function doLogin(event) {
-  event.preventDefault();
+document.getElementById("loginSubmitButton").onclick = function () {
   let emailValue = document.getElementById("userEmail").value;
   localStorage.setItem("email", emailValue);
   document.getElementById("signInButton").style.display = "none";
   document.getElementById("signOutButton").display = "block";
-  return false;
 }
 
 // Removing login

@@ -319,6 +319,10 @@ header #signInButton {
   padding: 0px 20px;
 }
 
+header #signOutButton {
+  padding: 0px 20px;
+}
+
 header .header-topbar .icon {
   height: 24px;
   width: 34px;

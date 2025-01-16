@@ -68,7 +68,7 @@ export default async function decorate(block) {
     signInModal.classList.add('modal');
     signInModal.id('signInModal');
     signInModal.innerHTML = '<div class="modal-content"><span class="close">&times;</span><p>SometextintheModal..</p></div>';
-    nav.prepend(signInModal);
+    //nav.prepend(signInModal);
     addSignInModalLogic();
     nav.setAttribute('aria-expanded', 'false');
     decorateIcons(block);

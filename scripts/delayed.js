@@ -20,7 +20,7 @@ if (analyticsConsent) {
   await analyticsSetConsent(analyticsConsent === 'ALLOW');
 }
 
-// Adding logic to Sign IN
+// Adding logic to Sign In Modal
 function addSignInModalLogic() {
   // Get the modal
   var signInModal = document.getElementById("signInModal");
@@ -48,3 +48,18 @@ function addSignInModalLogic() {
 }
 
 addSignInModalLogic();
+
+// Storing login
+function doLogin() {
+  let emailValue = document.getElementById("userEmail").value;
+  localStorage.setItem("email", emailValue);
+  document.getElementById("signInButton").style.display = "none";
+  document.getElementById("signOutButton").display = "block";
+}
+
+// Removing login
+function doLogout() {
+  localStorage.removeItem("email");
+  document.getElementById("signOutButton").display = "none";
+  document.getElementById("signInButton").style.display = "block";
+}

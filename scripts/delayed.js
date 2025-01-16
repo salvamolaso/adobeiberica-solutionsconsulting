@@ -50,11 +50,13 @@ function addSignInModalLogic() {
 addSignInModalLogic();
 
 // Storing login
-function doLogin() {
+function doLogin(event) {
+  event.preventDefault();
   let emailValue = document.getElementById("userEmail").value;
   localStorage.setItem("email", emailValue);
   document.getElementById("signInButton").style.display = "none";
   document.getElementById("signOutButton").display = "block";
+  return false;
 }
 
 // Removing login

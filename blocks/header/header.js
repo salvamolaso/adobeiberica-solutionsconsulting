@@ -66,7 +66,7 @@ export default async function decorate(block) {
     nav.prepend(hamburger);
     const signInModal = document.createElement('div');
     signInModal.classList.add('modal');
-    signInModal.id('signInModal');
+    signInModal.setAttribute('id', 'signInModal');
     signInModal.innerHTML = '<div class="modal-content"><span class="close">&times;</span><p>SometextintheModal..</p></div>';
     //nav.prepend(signInModal);
     addSignInModalLogic();

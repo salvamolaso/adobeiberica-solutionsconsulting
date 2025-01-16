@@ -306,11 +306,11 @@ header .header-topbar {
   font-size: var(--body-font-size-xs);
   text-transform: uppercase;
   padding: 0 16px;
-  position: fixed;
+  /* position: fixed;
+  visibility: hidden; */
   z-index: 2;
   right: 0;
   left: 0;
-  visibility: hidden;
 }
 
 header .header-topbar .icon {

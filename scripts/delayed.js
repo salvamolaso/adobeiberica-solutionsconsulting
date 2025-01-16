@@ -53,12 +53,12 @@ document.getElementById("loginSubmitButton").onclick = function () {
   let emailValue = document.getElementById("userEmail").value;
   localStorage.setItem("email", emailValue);
   document.getElementById("signInButton").style.display = "none";
-  document.getElementById("signOutButton").display = "block";
+  document.getElementById("signOutButton").style.display = "block";
 }
 
 // Removing login
 function doLogout() {
   localStorage.removeItem("email");
-  document.getElementById("signOutButton").display = "none";
+  document.getElementById("signOutButton").style.display = "none";
   document.getElementById("signInButton").style.display = "block";
 }

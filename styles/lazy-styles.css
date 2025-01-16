@@ -39,6 +39,13 @@ Modal Content
   font-weight: bold;
 }
 
+/* The Sign in fields */
+.sign-in-input {
+    /* min-width: 150px; */
+    display: inline-block;
+    width: 110px;
+}
+
 .close:hover,
 .close:focus {
   color: #000;

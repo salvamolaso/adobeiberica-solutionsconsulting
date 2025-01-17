@@ -39,8 +39,8 @@ window.hlx.RUM_GENERATION = 'experiment-001'; // add your RUM generation informa
 
 // Define the custom audiences mapping for experience decisioning
 const AUDIENCES = {
-  mobile: () => window.innerWidth < 600,
-  desktop: () => window.innerWidth >= 600,
+  mobile: () => window.innerWidth < 601,
+  desktop: () => window.innerWidth >= 601,
   'new-visitor': () => !localStorage.getItem('franklin-visitor-returning'),
   'returning-visitor': () => !!localStorage.getItem('franklin-visitor-returning'),
 };

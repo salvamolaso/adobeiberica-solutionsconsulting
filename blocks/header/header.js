@@ -72,5 +72,11 @@ export default async function decorate(block) {
     nav.setAttribute('aria-expanded', 'false');
     decorateIcons(block);
     block.append(nav);
+
+      // Salva::: Init logic
+    if(localStorage.getItem("email")) {
+      document.getElementById("signInButton").style.display = "none";
+      document.getElementById("signOutButton").style.display = "block";
+    }
   }
 }

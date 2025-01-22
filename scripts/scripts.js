@@ -45,6 +45,12 @@ const AUDIENCES = {
   'returning-visitor': () => !!localStorage.getItem('franklin-visitor-returning'),
 };
 
+// Salva::: Init logic
+if(localStorage.getItem("email")) {
+  document.getElementById("signInButton").style.display = "none";
+  document.getElementById("signOutButton").style.display = "block";
+}
+
 window.hlx.plugins.add('rum-conversion', {
   url: '/plugins/rum-conversion/src/index.js',
   load: 'lazy',

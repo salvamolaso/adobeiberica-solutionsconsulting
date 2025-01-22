@@ -49,12 +49,6 @@ function addSignInModalLogic() {
 
 addSignInModalLogic();
 
-// Init logic
-if(localStorage.getItem("email")) {
-  document.getElementById("signInButton").style.display = "none";
-  document.getElementById("signOutButton").style.display = "block";
-}
-
 document.getElementById("loginSubmitButton").onclick = function () {
   let emailValue = document.getElementById("userEmail").value;
   localStorage.setItem("email", emailValue);

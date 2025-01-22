@@ -306,15 +306,14 @@ async function loadPage() {
   }
   await window.hlx.plugins.load('eager');
   await loadEager(document);
-
+  
+  await window.hlx.plugins.load('lazy');
+  await loadLazy(document);
   // Salva::: Init logic
   if(localStorage.getItem("email")) {
     document.getElementById("signInButton").style.display = "none";
     document.getElementById("signOutButton").style.display = "block";
   }
-  
-  await window.hlx.plugins.load('lazy');
-  await loadLazy(document);
   //const setupAnalytics = setupAnalyticsTrackingWithAlloy(document);
   loadDelayed();
   //await setupAnalytics;

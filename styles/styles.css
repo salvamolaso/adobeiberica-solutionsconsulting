@@ -80,7 +80,8 @@ header {
 
 main {
   text-align: var(--default-text-align);
-  visibility: hidden;
+ /* Salva hidding agresively body
+  visibility: hidden; */
 }
 
 .hidden {

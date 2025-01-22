@@ -45,12 +45,6 @@ const AUDIENCES = {
   'returning-visitor': () => !!localStorage.getItem('franklin-visitor-returning'),
 };
 
-// Salva::: Init logic
-if(localStorage.getItem("email")) {
-  document.getElementById("signInButton").style.display = "none";
-  document.getElementById("signOutButton").style.display = "block";
-}
-
 window.hlx.plugins.add('rum-conversion', {
   url: '/plugins/rum-conversion/src/index.js',
   load: 'lazy',
@@ -312,6 +306,13 @@ async function loadPage() {
   }
   await window.hlx.plugins.load('eager');
   await loadEager(document);
+
+  // Salva::: Init logic
+  if(localStorage.getItem("email")) {
+    document.getElementById("signInButton").style.display = "none";
+    document.getElementById("signOutButton").style.display = "block";
+  }
+  
   await window.hlx.plugins.load('lazy');
   await loadLazy(document);
   //const setupAnalytics = setupAnalyticsTrackingWithAlloy(document);

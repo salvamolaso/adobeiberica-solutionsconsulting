@@ -66,8 +66,8 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
-  /* Salva hidding agresively body */
-  visibility: hidden; 
+  /* Salva hidding agresively body 
+  visibility: hidden; */
 }
 
 body.appear {
@@ -80,8 +80,8 @@ header {
 
 main {
   text-align: var(--default-text-align);
- /* Salva hidding agresively body 
-  visibility: hidden; */
+ /* Salva hidding agresively body  */
+  visibility: hidden;
 }
 
 .hidden {

@@ -21,10 +21,11 @@ export default async function decorate(block) {
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : (window.wknd.demoConfig.demoBase || '/nav');
 
   //Salva: Allowing AEM editing
+  let navURL = "";
   if (document.location.host.startsWith("author-")) {
-    let navURL = `${getSiteRoot(5)}${navPath}.plain.html`;
+    navURL = `${getSiteRoot(5)}${navPath}.plain.html`;
   } else {
-    let navURL = `${getSiteRoot()}${navPath}.plain.html`;
+    navURL = `${getSiteRoot()}${navPath}.plain.html`;
   }
   
   let updatedNavUrl = navURL.replace(/about-us\/|faqs\/|magazine\/.+\/|adventures\/.+\//g, "/");

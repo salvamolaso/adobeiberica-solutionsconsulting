@@ -43,7 +43,7 @@ function addSignInModalLogic() {
   }
 
   //Salva: Allowing AEM editing
-  if (document.location.host.startsWith("author-")) {
+  if (document.location.host.startsWith("author-") && document.body.getElementsByTagName('iframe')[0]) {
     document.body.getElementsByTagName('iframe')[0].contentDocument.getElementsByTagName('main')[0].style.visibility = 'visible';
   }
   

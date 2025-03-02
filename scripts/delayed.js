@@ -30,13 +30,21 @@ function addSignInModalLogic() {
   var signInCloseSpan = document.getElementsByClassName("close")[0];
   
   // When the user clicks the button, open the modal 
-  signInButton.onclick = function() {
-    signInModal.style.display = "block";
+  if (signInButton) {
+    signInButton.onclick = function() {
+      signInModal.style.display = "block";
+    }
   }
-  
   // When the user clicks on <span> (x), close the modal
-  signInCloseSpan.onclick = function() {
-    signInModal.style.display = "none";
+  if (signInCloseSpan) {
+    signInCloseSpan.onclick = function() {
+      signInModal.style.display = "none";
+    }
+  }
+
+  //Salva: Allowing AEM editing
+  if (document.location.host.startsWith("author-")) {
+    document.body.getElementsByTagName('iframe')[0].contentDocument.getElementsByTagName('main')[0].style.visibility = 'visible';
   }
   
   // When the user clicks anywhere outside of the modal, close it

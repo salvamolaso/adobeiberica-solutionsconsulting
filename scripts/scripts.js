@@ -225,7 +225,9 @@ async function loadEager(doc) {
   if (main) {
     //SALVA::: Pre-hidding snippet
     let isStageOrProd = document.location.host.indexOf(".aem.") > 1;
-    if (isStageOrProd) {
+    let isDebugMode = new URLSearchParams(window.location.search).get('adobe_authoring_enabled') == '1';
+
+    if (isStageOrProd && !isDebugMode) {
       main.style.visibility = 'hidden';
     }
     

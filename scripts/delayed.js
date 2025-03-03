@@ -41,11 +41,6 @@ function addSignInModalLogic() {
       signInModal.style.display = "none";
     }
   }
-
-  //Salva: Allowing AEM editing
-  if (document.location.host.startsWith("author-") && document.body.getElementsByTagName('iframe')[0]) {
-    document.body.getElementsByTagName('iframe')[0].contentDocument.getElementsByTagName('main')[0].style.visibility = 'visible';
-  }
   
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {

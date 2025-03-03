@@ -1,7 +1,7 @@
 <script>
   console.log(`Head loading at: ${Date.now()}`);
 
-  var isPageWithoutTagManager = document.location.pathname.indexOf('no-tag-manager') > 0;
+  var isPageWithoutTagManager = document.location.href.indexOf('no-tag-manager') > 0;
   if (!isPageWithoutTagManager) {
     const head = document.querySelector('head');
     const tagManagerScript = document.createElement('script');

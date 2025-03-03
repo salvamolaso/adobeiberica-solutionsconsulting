@@ -223,6 +223,14 @@ async function loadEager(doc) {
 
   const main = doc.querySelector('main');
   if (main) {
+    //SALVA::: Pre-hidding snippet
+    let isAEMAuthor = document.location.host.startsWith("author-") && document.body.getElementsByTagName('iframe')[0];
+    let isDebugMode = new URLSearchParams(window.location.search).get('adobe_authoring_enabled') == '1';
+    
+    if (!isAEMAuthor || !isDebugMode || !isPageWithoutTagManager) {
+      main.style.visibility = 'hidden';
+    }
+    
     await initAnalyticsTrackingQueue();
     decorateMain(main);
     await waitForLCP(LCP_BLOCKS);

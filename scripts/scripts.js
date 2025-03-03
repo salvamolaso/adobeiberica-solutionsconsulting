@@ -229,7 +229,7 @@ async function loadEager(doc) {
       main.style.visibility = 'hidden';
     }
     
-    await initAnalyticsTrackingQueue();
+    //await initAnalyticsTrackingQueue();
     decorateMain(main);
     await waitForLCP(LCP_BLOCKS);
   }

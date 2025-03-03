@@ -227,8 +227,11 @@ async function loadEager(doc) {
     let isAEMAuthor = document.location.host.startsWith("author-") && document.body.getElementsByTagName('iframe')[0];
     let isDebugMode = new URLSearchParams(window.location.search).get('adobe_authoring_enabled') == '1';
     
-    if (!isAEMAuthor || !isDebugMode || !isPageWithoutTagManager) {
+    if (!isAEMAuthor || !isDebugMode) {
       main.style.visibility = 'hidden';
+    }
+    if (isPageWithoutTagManager) {
+      main.style.visibility = 'visible';
     }
     
     await initAnalyticsTrackingQueue();

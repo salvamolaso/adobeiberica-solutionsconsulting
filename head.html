@@ -1,19 +1,14 @@
 <script>
   console.log(`Head loading at: ${Date.now()}`);
-  //SALVA::: Pre-hidding snippet
-  let isAEMAuthor = document.location.host.startsWith("author-") && document.body.getElementsByTagName('iframe')[0];
-  let isDebugMode = new URLSearchParams(window.location.search).get('adobe_authoring_enabled') == '1';
-  var isPageWithoutTagManager = document.location.pathname.indexOf('no-tag-manager') > 0;
-  if (!isAEMAuthor || !isDebugMode || !isPageWithoutTagManager) {
-    document.getElementsByTagName('main')[0].style.visibility = 'hidden';
-  }
 
+  var isPageWithoutTagManager = document.location.pathname.indexOf('no-tag-manager') > 0;
   if (!isPageWithoutTagManager) {
     const head = document.querySelector('head');
     const tagManagerScript = document.createElement('script');
     tagManagerScript.setAttribute('async', 'true');
     tagManagerScript.src = 'https://assets.adobedtm.com/59610d662d36/f05648dc5d82/launch-cce4ee52a29f-development.min.js';
   }
+  
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1"/>

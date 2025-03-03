@@ -7,10 +7,15 @@
   if (!isAEMAuthor || !isDebugMode || !isPageWithoutTagManager) {
     document.getElementsByTagName('main')[0].style.visibility = 'hidden';
   }
+
+  if (!isPageWithoutTagManager) {
+    const head = document.querySelector('head');
+    const tagManagerScript = document.createElement('script');
+    tagManagerScript.setAttribute('async', 'true');
+    tagManagerScript.src = 'https://assets.adobedtm.com/59610d662d36/f05648dc5d82/launch-cce4ee52a29f-development.min.js';
+  }
 </script>
 
-
-<script src="https://assets.adobedtm.com/59610d662d36/f05648dc5d82/launch-cce4ee52a29f-development.min.js" async></script>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <script src="/scripts/scripts.js" type="module"></script>
 <link rel="stylesheet" href="/styles/styles.css"/>

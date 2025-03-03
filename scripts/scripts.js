@@ -224,14 +224,9 @@ async function loadEager(doc) {
   const main = doc.querySelector('main');
   if (main) {
     //SALVA::: Pre-hidding snippet
-    let isAEMAuthor = document.location.host.startsWith("author-") && document.body.getElementsByTagName('iframe')[0];
-    let isDebugMode = new URLSearchParams(window.location.search).get('adobe_authoring_enabled') == '1';
-    
-    if (!isAEMAuthor || !isDebugMode) {
+    let isStageOrProd = document.location.host.indexOf(".aem.") > 1;
+    if (isStageOrProd) {
       main.style.visibility = 'hidden';
-    }
-    if (isPageWithoutTagManager) {
-      main.style.visibility = 'visible';
     }
     
     await initAnalyticsTrackingQueue();

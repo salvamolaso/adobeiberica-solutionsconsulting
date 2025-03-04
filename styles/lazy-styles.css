@@ -31,6 +31,12 @@ Modal Content
   align: center;
 }
 
+@media (max-width: 600px) {
+  .modal-content {
+    width: 40%;
+  }
+}
+
 /* The Close Button */
 .close {
   color: #aaaaaa;

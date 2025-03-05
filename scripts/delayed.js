@@ -58,10 +58,12 @@ document.getElementById("loginSubmitButton").onclick = function () {
   document.getElementById("signInButton").style.display = "none";
   document.getElementById("signOutButton").style.display = "block";
   signInModal.style.display = "none";
+  location.reload();
 }
 
 document.getElementById("signOutButton").onclick = function () {
   localStorage.removeItem("email");
   document.getElementById("signOutButton").style.display = "none";
   document.getElementById("signInButton").style.display = "block";
+  location.reload();
 }

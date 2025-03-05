@@ -334,7 +334,7 @@ main .section[data-section-status='initialized'] {
 }
 
 /* cookie consent styles */
-.cc-window.cc-banner.cc-theme-block {
+.cc-banner.cc-theme-block {
   padding: 12px 10px;
   background-color: var(--background-color);
   color: var(--text-color);

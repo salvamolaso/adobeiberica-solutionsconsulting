@@ -38,4 +38,8 @@ export default function decorate(block) {
     const slide = block.children[activeElement];
     updateButtons(slide);
   }, { passive: true });
+
+  //SALVA:::
+  const carouselDecoratedEvent = new Event("carouselDecorated");
+  elem.dispatchEvent(carouselDecoratedEvent);
 }

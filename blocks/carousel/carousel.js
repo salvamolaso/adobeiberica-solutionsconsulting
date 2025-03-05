@@ -41,5 +41,5 @@ export default function decorate(block) {
 
   //SALVA:::
   const carouselDecoratedEvent = new Event("carouselDecorated");
-  elem.dispatchEvent(carouselDecoratedEvent);
+  document.dispatchEvent(carouselDecoratedEvent);
 }

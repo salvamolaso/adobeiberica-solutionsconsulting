@@ -160,6 +160,7 @@ if (email && location.href.endsWith("travel-event")) {
         </div>
         <div class="carousel-text">
             <h2 id="encuentra-los-mejores-viajes-para-ti"><a href="/adventures" title="WKND Adventures">${textPersonalized}</a></h2>
+            <p>Explore nuestra lista de experiencias seleccionadas para tí.</p>
             <p class="button-container"><a href="/adventures" title="Book your trip now! 50% off" class="button primary">Reserve ahora con un 10% de descuento!</a></p>
         </div>`;
     console.log("SALVA::: personalizedHTML: " + personalizedHTML);

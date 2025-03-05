@@ -103,7 +103,7 @@ if (email && location.href.endsWith("travel-event")) {
         textPersonalized = "En pareja paseando con alegría por el bosque en un día soleado. Encuentra los mejores viajes para ti ;)";
     } else if (email=="a.garcias@barcelo.com") {
         imagePath = "https://publish-p109404-e1067141.adobeaemcloud.com/content/dam/Adobe-Iberica-SC/Travel/En-pareja-un-pueblo-pequeno-un-dia-soleado-widescreen.jpeg";
-        textPersonalized = "En pareja paseando con alegría por un pequeño puebl en un día soleado. Encuentra los mejores viajes para ti ;)";
+        textPersonalized = "En pareja paseando con alegría por un pequeño pueblo en un día soleado. Encuentra los mejores viajes para ti ;)";
     } else if (email=="virginia.saez@iberostar.com") {
         imagePath = "https://publish-p109404-e1067141.adobeaemcloud.com/content/dam/Adobe-Iberica-SC/Travel/En-pareja-un-pueblo-pequeno-el-atardecer-widescreen.jpeg";
         textPersonalized = "En pareja paseando con alegría por un pequeño pueblo en el atardecer. Encuentra los mejores viajes para ti ;)";
@@ -160,7 +160,6 @@ if (email && location.href.endsWith("travel-event")) {
         </div>
         <div class="carousel-text">
             <h2 id="encuentra-los-mejores-viajes-para-ti"><a href="/adventures" title="WKND Adventures">${textPersonalized}</a></h2>
-            <p>Únase a nosotros en una de nuestras próximas aventuras. Explore nuestra lista de experiencias seleccionadas.</p>
             <p class="button-container"><a href="/adventures" title="Book your trip now! 50% off" class="button primary">Reserve ahora con un 10% de descuento!</a></p>
         </div>`;
     console.log("SALVA::: personalizedHTML: " + personalizedHTML);

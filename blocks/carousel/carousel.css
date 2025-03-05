@@ -29,6 +29,11 @@ main .carousel picture {
     width: 100%;
     object-position: 90%;
   }
+
+  main .carousel div.carousel-text {
+    width: 90%;
+  }
+
 }
 
 @media (min-width: 600px) {
@@ -56,12 +61,6 @@ main .carousel div.carousel-text {
   background-color: white;
   min-height: 188px;
   padding: 0 28px;
-}
-
-@media (max-width: 600px) {
-  .main .carousel img {
-    padding: 0 8px;
-  }
 }
 
 main .carousel div.carousel-text p {

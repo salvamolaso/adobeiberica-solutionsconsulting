@@ -23,7 +23,7 @@ main .carousel picture {
 
 
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .main .carousel img {
     object-fit: cover;
     width: 100%;
@@ -31,7 +31,7 @@ main .carousel picture {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
   main .carousel img {
     object-fit: cover;
     width: 100%;
@@ -56,6 +56,12 @@ main .carousel div.carousel-text {
   background-color: white;
   min-height: 188px;
   padding: 0 28px;
+}
+
+@media and (max-width: 600px) {
+  .main .carousel img {
+    padding: 0 8px;
+  }
 }
 
 main .carousel div.carousel-text p {

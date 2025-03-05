@@ -33,7 +33,7 @@ Modal Content
 
 @media (max-width: 600px) {
   .modal-content {
-    width: 40%;
+    width: 60%;
   }
 }
 

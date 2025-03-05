@@ -58,7 +58,7 @@ main .carousel div.carousel-text {
   padding: 0 28px;
 }
 
-@media and (max-width: 600px) {
+@media (max-width: 600px) {
   .main .carousel img {
     padding: 0 8px;
   }

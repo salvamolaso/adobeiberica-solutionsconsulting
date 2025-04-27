@@ -1,5 +1,6 @@
 <script>
-  console.log(`Head loading at: ${Date.now()}`);
+  var initLoadingTime = Date.now();
+  console.log(`Head loading at: ${initLoadingTime}`);
 
   var isPageWithoutTagManager = document.location.href.indexOf('no-tag-manager') > 0;
   if (!isPageWithoutTagManager) {

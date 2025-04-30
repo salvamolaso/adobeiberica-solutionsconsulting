@@ -66,6 +66,8 @@ main .carousel div.carousel-text {
   background-color: white;
   min-height: 188px;
   padding: 0 28px;
+  /*Salva: Hidden for NBA */
+  visibility: hidden;
 }
 
 main .carousel div.carousel-text p {

@@ -69,7 +69,7 @@ main .carousel div.carousel-text {
 }
 
 /*Salva: Hidden for NBA */
-main .carousel div.carousel-text:first-child {
+main .carousel div.carousel-text :first-child {
   visibility: hidden;
 }
 

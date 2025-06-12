@@ -1,4 +1,4 @@
 mappings:
- - /content/salva-dmeo/:/
- - /content/salva-dmeo/metadata.json:/metadata.json
- - /content/salva-dmeo/redirects.json:/redirects.json
+ - /content/salva-demo/:/
+ - /content/salva-demo/metadata.json:/metadata.json
+ - /content/salva-demo/redirects.json:/redirects.json

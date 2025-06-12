@@ -1,8 +1,8 @@
 {
   "mappings": [
-    "/content/adobeiberica-solutionsconsulting/:/",
-    "/content/adobeiberica-solutionsconsulting/metadata.json:/metadata.json",
-    "/content/adobeiberica-solutionsconsulting/redirects.json:/redirects.json",
-    "/content/adobeiberica-solutionsconsulting/configuration.json:/configuration.json"
+    "/content/salva-dmeo/:/",
+    "/content/salva-dmeo/metadata.json:/metadata.json",
+    "/content/salva-dmeo/redirects.json:/redirects.json",
+    "/content/salva-dmeo/configuration.json:/configuration.json"
   ]
 }

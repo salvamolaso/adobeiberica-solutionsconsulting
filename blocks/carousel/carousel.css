@@ -68,10 +68,11 @@ main .carousel div.carousel-text {
   padding: 0 28px;
 }
 
-/*Salva: Hidden for NBA */
+/*Salva: Hidden for NBA 
 main .carousel div.carousel-text :first-child {
   visibility: hidden;
 }
+*/
 
 main .carousel div.carousel-text p {
   margin: 10px 0 16px;
